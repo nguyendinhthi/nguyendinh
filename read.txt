@@ -2,3 +2,4 @@ cai nay co tai lieu linh hoat, nhung rat phuc tap nhieu cau truc gop
 kho hieu lam 
 chia nho ra ma hieu thoi
 file .chm co may cai lien ket dong kha hay, nen tim may cai linh tinh hay
+may cai nay cang ngay cang phuc tap , khong biet duong nao ma lan day
