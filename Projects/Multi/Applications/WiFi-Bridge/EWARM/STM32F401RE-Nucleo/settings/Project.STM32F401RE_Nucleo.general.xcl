@@ -1,14 +1,14 @@
-"C:\Users\marco grella\AppData\Roaming\IAR Systems\Embedded Workbench 7.80_2\arm\bin\armproc.dll" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\bin\armproc.dll" 
 
-"C:\Users\marco grella\AppData\Roaming\IAR Systems\Embedded Workbench 7.80_2\arm\bin\armstlink2.dll" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\bin\armstlink2.dll" 
 
-"C:\STM32CubeFunctionPack_6LPWIFI1_V2.0.0\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\STM32F401RE_Nucleo\Exe\STM32F4xx-Nucleo-WiFi-Bridge.out" 
+"D:\ANH\en.FP-NET-6LPWIFI1\nguyendinh\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\STM32F401RE_Nucleo\Exe\STM32F4xx-Nucleo-WiFi-Bridge.out" 
 
---plugin "C:\Users\marco grella\AppData\Roaming\IAR Systems\Embedded Workbench 7.80_2\arm\bin\armbat.dll" 
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\bin\armbat.dll" 
 
---device_macro "C:\Users\marco grella\AppData\Roaming\IAR Systems\Embedded Workbench 7.80_2\arm\config\debugger\ST\STM32F4xx.dmac" 
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\config\debugger\ST\STM32F4xx.dmac" 
 
---flash_loader "C:\Users\marco grella\AppData\Roaming\IAR Systems\Embedded Workbench 7.80_2\arm\config\flashloader\ST\FlashSTM32F401xE.board" 
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\arm\config\flashloader\ST\FlashSTM32F401xE.board" 
 
 
 

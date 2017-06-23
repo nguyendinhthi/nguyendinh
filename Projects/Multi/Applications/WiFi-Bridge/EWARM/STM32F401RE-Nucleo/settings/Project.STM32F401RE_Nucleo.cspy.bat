@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Users\marco grella\AppData\Roaming\IAR Systems\Embedded Workbench 7.80_2\common\bin\cspybat" -f "C:\STM32CubeFunctionPack_6LPWIFI1_V2.0.0\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.general.xcl" --backend -f "C:\STM32CubeFunctionPack_6LPWIFI1_V2.0.0\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\common\bin\cspybat" -f "D:\ANH\en.FP-NET-6LPWIFI1\nguyendinh\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.general.xcl" --backend -f "D:\ANH\en.FP-NET-6LPWIFI1\nguyendinh\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Users\marco grella\AppData\Roaming\IAR Systems\Embedded Workbench 7.80_2\common\bin\cspybat" -f "C:\STM32CubeFunctionPack_6LPWIFI1_V2.0.0\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.general.xcl" "--debug_file=%~1" --backend -f "C:\STM32CubeFunctionPack_6LPWIFI1_V2.0.0\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0_2\common\bin\cspybat" -f "D:\ANH\en.FP-NET-6LPWIFI1\nguyendinh\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.general.xcl" "--debug_file=%~1" --backend -f "D:\ANH\en.FP-NET-6LPWIFI1\nguyendinh\Projects\Multi\Applications\WiFi-Bridge\EWARM\STM32F401RE-Nucleo\settings\Project.STM32F401RE_Nucleo.driver.xcl" 
 
 @echo off 
 :end
