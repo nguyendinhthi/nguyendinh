@@ -1,0 +1,1137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="File-List" href="Release_Notes_files/filelist.xml">
+<link rel="Edit-Time-Data" href="Release_Notes_files/editdata.mso"><!--[if !mso]> <style> v\:* {behavior:url(#default#VML);} o\:* {behavior:url(#default#VML);} w\:* {behavior:url(#default#VML);} .shape {behavior:url(#default#VML);} </style> <![endif]--><title>Release Notes for FP-NET-6LPWIFI1. Software for STM32, Expansion for STM32Cube</title><!--[if gte mso 9]><xml> <o:DocumentProperties> <o:Author>STMicroelectronics</o:Author> <o:LastAuthor>Raouf Hosni</o:LastAuthor> <o:Revision>69</o:Revision> <o:TotalTime>153</o:TotalTime> <o:Created>2009-02-27T19:26:00Z</o:Created> <o:LastSaved>2009-07-21T16:16:00Z</o:LastSaved> <o:Pages>1</o:Pages> <o:Words>410</o:Words> <o:Characters>2339</o:Characters> <o:Company>STMicroelectronics</o:Company> <o:Lines>19</o:Lines> <o:Paragraphs>5</o:Paragraphs> <o:CharactersWithSpaces>2744</o:CharactersWithSpaces> <o:Version>11.8132</o:Version> </o:DocumentProperties> </xml><![endif]--><!--[if gte mso 9]><xml> <w:WordDocument> <w:Zoom>110</w:Zoom> <w:SpellingState>Clean</w:SpellingState> <w:GrammarState>Clean</w:GrammarState> <w:ValidateAgainstSchemas/> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" LatentStyleCount="156"> </w:LatentStyles> </xml><![endif]-->
+
+
+
+<style>
+<!--
+/* Font Definitions */
+@font-face
+{font-family:Wingdings;
+panose-1:5 0 0 0 0 0 0 0 0 0;
+mso-font-charset:2;
+mso-generic-font-family:auto;
+mso-font-pitch:variable;
+mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+{font-family:Verdana;
+panose-1:2 11 6 4 3 5 4 4 2 4;
+mso-font-charset:0;
+mso-generic-font-family:swiss;
+mso-font-pitch:variable;
+mso-font-signature:536871559 0 0 0 415 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{mso-style-parent:"";
+margin:0in;
+margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+h1
+{mso-margin-top-alt:auto;
+margin-right:0in;
+mso-margin-bottom-alt:auto;
+margin-left:0in;
+mso-pagination:widow-orphan;
+mso-outline-level:1;
+font-size:24.0pt;
+font-family:"Times New Roman";
+font-weight:bold;}
+h2
+{mso-style-next:Normal;
+margin-top:12.0pt;
+margin-right:0in;
+margin-bottom:3.0pt;
+margin-left:0in;
+mso-pagination:widow-orphan;
+page-break-after:avoid;
+mso-outline-level:2;
+font-size:14.0pt;
+font-family:Arial;
+font-weight:bold;
+font-style:italic;}
+h3
+{mso-margin-top-alt:auto;
+margin-right:0in;
+mso-margin-bottom-alt:auto;
+margin-left:0in;
+mso-pagination:widow-orphan;
+mso-outline-level:3;
+font-size:13.5pt;
+font-family:"Times New Roman";
+font-weight:bold;}
+a:link, span.MsoHyperlink
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+{color:blue;
+text-decoration:underline;
+text-underline:single;}
+p
+{mso-margin-top-alt:auto;
+margin-right:0in;
+mso-margin-bottom-alt:auto;
+margin-left:0in;
+mso-pagination:widow-orphan;
+font-size:12.0pt;
+font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+{mso-style-name:"";
+mso-spl-e:yes;}
+span.GramE
+{mso-style-name:"";
+mso-gram-e:yes;}
+@page Section1
+{size:8.5in 11.0in;
+margin:1.0in 1.25in 1.0in 1.25in;
+mso-header-margin:.5in;
+mso-footer-margin:.5in;
+mso-paper-source:0;}
+div.Section1
+{page:Section1;}
+/* List Definitions */
+@list l0
+{mso-list-id:23363371;
+mso-list-template-ids:-647963956;}
+@list l0:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l1
+{mso-list-id:168329112;
+mso-list-template-ids:531151312;}
+@list l1:level1
+{mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;}
+@list l2
+{mso-list-id:208108245;
+mso-list-template-ids:531151312;}
+@list l3
+{mso-list-id:288903641;
+mso-list-template-ids:1280375526;}
+@list l3:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l3:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:1.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l4
+{mso-list-id:381487268;
+mso-list-template-ids:875059892;}
+@list l4:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l4:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l4:level3
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:1.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l5
+{mso-list-id:387337372;
+mso-list-template-ids:2059831420;}
+@list l5:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l5:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l5:level3
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:1.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l6
+{mso-list-id:398556519;
+mso-list-template-ids:863260980;}
+@list l6:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l6:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l6:level3
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:1.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l7
+{mso-list-id:427234562;
+mso-list-template-ids:1175231630;}
+@list l7:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l7:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l7:level3
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:1.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l8
+{mso-list-id:770708434;
+mso-list-template-ids:922146896;}
+@list l8:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l8:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l9
+{mso-list-id:897087769;
+mso-list-template-ids:-296591264;}
+@list l9:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l9:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l9:level3
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:1.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l10
+{mso-list-id:914320360;
+mso-list-template-ids:-17913654;}
+@list l10:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0A7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Wingdings;}
+@list l11
+{mso-list-id:941258739;
+mso-list-template-ids:531151312;}
+@list l11:level1
+{mso-level-start-at:2;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;}
+@list l12
+{mso-list-id:1142191611;
+mso-list-template-ids:167950;}
+@list l12:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l13
+{mso-list-id:1175606214;
+mso-list-template-ids:562466218;}
+@list l13:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l13:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l14
+{mso-list-id:1205370143;
+mso-list-template-ids:-1549212086;}
+@list l14:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l14:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l15
+{mso-list-id:1259947084;
+mso-list-template-ids:531151312;}
+@list l15:level1
+{mso-level-start-at:4;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;}
+@list l16
+{mso-list-id:1368067713;
+mso-list-template-ids:531151312;}
+@list l16:level1
+{mso-level-start-at:3;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;}
+@list l17
+{mso-list-id:1380974945;
+mso-list-template-ids:133843734;}
+@list l17:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l17:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l18
+{mso-list-id:1414398772;
+mso-list-template-ids:423633402;}
+@list l18:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l19
+{mso-list-id:1710957209;
+mso-list-template-ids:342905684;}
+@list l19:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l19:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l20
+{mso-list-id:1876498313;
+mso-list-template-ids:1282940102;}
+@list l20:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+@list l20:level2
+{mso-level-number-format:bullet;
+mso-level-text:o;
+mso-level-tab-stop:1.0in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman";}
+@list l21
+{mso-list-id:1877691408;
+mso-list-template-ids:-2105924046;}
+@list l21:level1
+{mso-level-number-format:bullet;
+mso-level-text:\F0B7;
+mso-level-tab-stop:.5in;
+mso-level-number-position:left;
+text-indent:-.25in;
+mso-ansi-font-size:10.0pt;
+font-family:Symbol;}
+ol
+{margin-bottom:0in;}
+ul
+{margin-bottom:0in;}
+-->
+</style><!--[if gte mso 10]> <style> /* Style Definitions */ table.MsoNormalTable {mso-style-name:"Table Normal"; mso-tstyle-rowband-size:0; mso-tstyle-colband-size:0; mso-style-noshow:yes; mso-style-parent:""; mso-padding-alt:0in 5.4pt 0in 5.4pt; mso-para-margin:0in; mso-para-margin-bottom:.0001pt; mso-pagination:widow-orphan; font-size:10.0pt; font-family:"Times New Roman"; mso-ansi-language:#0400; mso-fareast-language:#0400; mso-bidi-language:#0400;} </style> <![endif]--><!--[if gte mso 9]><xml> <o:shapedefaults v:ext="edit" spidmax="6146"/> </xml><![endif]--><!--[if gte mso 9]><xml> <o:shapelayout v:ext="edit"> <o:idmap v:ext="edit" data="1"/> </o:shapelayout></xml><![endif]--></head><body link="blue" vlink="blue">
+<div class="Section1">
+<p class="MsoNormal"><span style="font-family: Arial;"><br>
+</span><span style="font-family: Arial;"><o:p></o:p></span></p>
+<div align="center">
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+<tbody>
+<tr style="">
+<td style="padding: 0in;" valign="top">
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" cellspacing="0" width="900">
+<tbody>
+<tr style="">
+<td style="padding: 1.5pt;">
+
+<h1 style="margin-bottom: 0.25in; text-align: center;" align="center"><span style="font-size: 20pt; font-family: Verdana; color: rgb(51, 102, 255);">Release Notes for FP-NET-6LPWIFI1</span><span style="font-size: 20pt; font-family: Verdana;"><o:p></o:p></span></h1>
+<h1 style="margin-bottom: 0.25in; text-align: center;" align="center"><span style="font-size: 20pt; font-family: Verdana; color: rgb(51, 102, 255);">Software for STM32, Expansion for STM32Cube</span><span style="font-size: 20pt; font-family: Verdana;"><o:p></o:p></span></h1>
+
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black; font-weight: bold;">Copyright&nbsp;2016
+STMicroelectronics</span><span style="color: black;"><u1:p></u1:p><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span style="font-size: 10pt; font-family: Arial; color: black;"><img style="border: 0px solid ; width: 104px; height: 77px;" alt="" id="_x0000_i1025" src="_htmresc/st_logo.png"></span><span style="font-size: 10pt;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span style="font-family: Arial; display: none;"><o:p>&nbsp;</o:p></span></p>
+<table class="MsoNormalTable" style="width: 675pt;" border="0" cellpadding="0" width="900">
+<tbody>
+<tr>
+<td style="padding: 0in;" valign="top">
+<div style="margin-left: 40px;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">
+<br>
+FP-NET-6LPWIFI1 is an STM32 ODE Function Pack. Thanks to this package you can connect your IoT node inside a 6LoWPAN Wireless Sensors Network to the Internet, by the means of a Wi-Fi network. This package allows jumpstarting end-to-end IoT development so you can save time in the integration of the different basic functions needed to have a 6LoWPAN node connected to a web based or cloud infrastructure.  </span><br>
+</div>
+<div style="margin-left: 40px;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"><br>
+FP-NET-6LPWIFI1 software features:</span></div>
+
+<div style="margin-left: 40px;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">
+<ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Application-level functions to bridge 6LoWPAN and Wi-Fi networks
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Middleware library with Contiki OS and Contiki 6LoWPAN protocol stack 3.x
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Support for mesh networking technology by the means of the standard RPL protocol
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Middleware library for Wi-Fi connectivity using the SPW01SA module 
+</span>
+</li>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Middleware library with MQTT protocol to connect to IBM cloud services
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Sample application showing a Wi-Fi router that integrates SPWF01Sx, SPIRIT1 and the Contiki OS
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Sample application showing an Application Level Gateway, from OMA LWM2M to IBM Cloud, that integrates SPWF01Sx, SPIRIT1, Contiki OS and MQTT Paho library.
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Example implementation available for X-NUCLEO-IDS01Ax and X-NUCLEO-IDW01M1 boards connected to a NUCLEO-F401RE board 
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Binary firmware for wireless sensors nodes available for various configurations 
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Easy portability across different MCU families, thanks to STM32Cube 
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Free, user-friendly license terms 
+</span>
+</li>
+</ul>
+</div>
+
+<div style="margin-left: 40px;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"><br>
+The figure below shows the overall architecture.</span></div>
+
+&nbsp; &nbsp; &nbsp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img style="width: 713px; height: 416px;" alt="" src="_htmresc/FP-NET-6LPWIFI1_Components.jpg"><br>
+<br>
+
+<div style="margin-left: 40px;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">
+<ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="margin-top: 4.5pt; margin-bottom: 4.5pt; color: black;">
+<p class="MsoNormal">
+<span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;;">
+At the bottom layer there are the HW components: the STM32 MCU, the X-NUCLEO-IDW01M1 Wi-Fi module and the X-NUCLEO-IDS01Ax SubGHz module.
+</span>
+</p>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+The drivers abstract low-level details of the hardware and allow the middleware components and applications to access the SPWF01Sx and the SPIRIT1 in a hardware independent fashion.
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Wi-Fi Bridge: this application allows to create a bridge between a 6LoWPAN network and the Internet using Contiki OS and the Wi-Fi module (SPWF01SA).
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+LWM2M to IBM: this application allows to connect a 6LoWPAN network that uses OMA LWM2M and IPSO semantics over CoAP protocol with Watson IoT cloud services by IBM, using Contiki OS, the Wi-Fi module (SPWF01SA) and MQTT Paho library.
+</span>
+</li>
+</ul>
+</div>
+
+<div style="margin-left: 40px;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;"><br>
+Related information and documentation:</span></div>
+
+<div style="margin-left: 40px;"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">
+<ul style="margin-top: 0cm;" type="square">
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+UM2080: Getting started with the FP-NET-6LPWIFI1 software package connecting 6LoWPAN IoT nodes to the Internet via Wi-Fi networks, available at
+ <a href="http://www.st.com/">www.st.com</a>
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+STM32Cube: <a href="http://www.st.com/stm32cube">www.st.com/stm32cube</a>
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+STM32 Nucleo boards: <a href="http://www.st.com/stm32nucleo">www.st.com/stm32nucleo</a>
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+STM32 Nucleo expansion boards: <a href="http://www.st.com/x-nucleo">www.st.com/x-nucleo</a>
+</span>
+</li>
+<li class="MsoNormal" style="margin: 4.5pt 0in; font-size: 12pt; font-family: 'Times New Roman'; color: black;">
+<span style="font-size: 10pt; font-family: Verdana,sans-serif;">
+Contiki OS official website: <a href="http://www.contiki-os.org">www.contiki-os.org</a>
+</span>
+</li>
+</ul>
+</div>
+<br>
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><span style="font-size: 12pt; color: white;"><a name="History"></a>Update
+History</span></h2>
+
+
+<h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 200px;">
+<span style="font-size: 10pt; font-family: Arial; color: white;">V2.0.0 / 20-Apr-2017</span></h3>
+<u9:p></u9:p>
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:"Verdana","sans-serif";
+    color:black'>Main Changes</span></u></b><span style='font-size:10.0pt;
+    font-family:"Verdana","sans-serif"'> </span><o:p></o:p></p>
+    <u9:p></u9:p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>New LWM2M to IBM sample application.</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>	
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>Updated all the Drivers and Middlewares to latest releases.</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>Wi-Fi parameters can now be saved to/read from flash memory (for both applications).</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>	
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:"Verdana","sans-serif";
+    color:black'><br>
+    Contents</span></u></b><span style='font-size:10.0pt'> </span></p>
+<u9:p></u9:p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l6 level1 lfo4;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32Cube HAL and Middlewares drivers</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>	  
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32CubeF4 v1.15.0 </span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-CUBE-WIFI1 v3.0.1 </span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-CUBE-SUBG1 v1.2.0</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Documentation</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l7 level2 lfo5;tab-stops:list 1.0in'><span
+          class=apple-converted-space><span style='font-size:10.0pt;font-family:
+          "Verdana","sans-serif"'>Doxygen documentation </span></span><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>V2.0.0<span
+          class=apple-converted-space><span style='font-family:"Verdana","sans-serif"'>&nbsp;</span></span>(<a
+          href="Documentation/FP-NET-6LPWIFI1.chm">FP-NET-6LPWIFI1.chm</a>)</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Drivers</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32F4xx HAL V1.7.0 (<a
+          href="Drivers/STM32F4xx_HAL_Driver/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+	 <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>BSP
+          X-NUCLEO-IDW0xx1 V3.0.0 (<a
+          href="Drivers/BSP/X-NUCLEO-IDW0xx1/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>BSP
+          X-NUCLEO-IDS01Ax V1.0.0 (<a
+          href="Drivers/BSP/X-NUCLEO-IDS01Ax/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>BSP STM32F4xx-Nucleo Library v1.2.6 (<a
+          href="Drivers/BSP/STM32F4xx_Nucleo/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+	</ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Middlewares</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO-SPWF0xSy Library v3.0.0 (<a
+          href="Middlewares/ST/STM32_SPWF0xSy/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Contiki OS v3.x - version updated to commit c05665a16b875f7c140e8110b913c32c7d430078 from <a href="https://github.com/contiki-os/contiki">https://github.com/contiki-os/contiki</a> repository</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>MQTT-Paho Library</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+	</ul>
+	</ul>
+	<p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+	<p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Development Toolchains and Compilers<u9:p></u9:p></span></u></b></p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>IAR
+         Embedded Workbench for ARM (EWARM) toolchain v7.80 + ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Keil
+         Microcontroller Development Kit (MDK-ARM) toolchain v5.23<span
+         class=apple-converted-space><span style='font-family:"Verdana","sans-serif"'>
+         </span></span>+&nbsp;ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>
+         System Workbench for STM32 (SW4STM32) toolchain v1.31.1<span class=apple-converted-space><span
+         style='font-family:"Verdana","sans-serif"'> </span></span>+&nbsp;ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+    <p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Supported Devices and EVAL boards<u9:p></u9:p></span></u></b></p>
+    <ul style='margin-top:0in' type=square>	
+	<li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32F401RE devices</span><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO-IDW01M1
+         Wi-Fi Expansion Board</span><u9:p></u9:p><o:p></o:p></li>
+  <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO-IDS01Ax
+         SubGHz Expansion Board</span><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+    <p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Known Limitations</span></u></b></p>
+    <ul style='margin-top:0in' type=square>	
+	<li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+		 4.5pt;mso-list:l1 level1 lfo8;tab-stops:list .5in'><span
+		 style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Wi-Fi Bridge:</span><u9:p></u9:p><o:p></o:p></li>
+		<ul style='margin-top:0in' type=square>	 
+		<li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+			 4.5pt;mso-list:l1 level1 lfo8;tab-stops:list .5in'><span
+			 style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>There is a Hardware limitation on the maximum number of connected clients, in fact SPWF01SA module is limited to a maximum of 8 open sockets</span><u9:p></u9:p><o:p></o:p></li>
+		 <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+			 4.5pt;mso-list:l1 level1 lfo8;tab-stops:list .5in'><span
+			 style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Only UDP transport protocol is supported at the moment</span><u9:p></u9:p><o:p></o:p></li>
+		 </ul>
+	 </ul>
+    </ul>
+
+<h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 200px;">
+<span style="font-size: 10pt; font-family: Arial; color: white;">V1.1.0 / 23-Dec-2016</span></h3>
+<u9:p></u9:p>
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:"Verdana","sans-serif";
+    color:black'>Main Changes</span></u></b><span style='font-size:10.0pt;
+    font-family:"Verdana","sans-serif"'> </span><o:p></o:p></p>
+    <u9:p></u9:p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>Updated all the Drivers and Middlewares to latest releases</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>Adopted "Multi" structure for Project</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>	
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>Added nodes examples for expansion board X-NUCLEO-IKS01A2 (in "Utilities").</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>	
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:"Verdana","sans-serif";
+    color:black'><br>
+    Contents</span></u></b><span style='font-size:10.0pt'> </span></p>
+<u9:p></u9:p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l6 level1 lfo4;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32Cube HAL and Middlewares drivers</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>	  
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32CubeF4 v1.13.1 </span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-CUBE-WIFI1 v2.1.1 </span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-CUBE-SUBG1 v1.2.0</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Documentation</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l7 level2 lfo5;tab-stops:list 1.0in'><span
+          class=apple-converted-space><span style='font-size:10.0pt;font-family:
+          "Verdana","sans-serif"'>Doxygen documentation </span></span><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>V1.1.0<span
+          class=apple-converted-space><span style='font-family:"Verdana","sans-serif"'>&nbsp;</span></span>(<a
+          href="Documentation/FP-NET-6LPWIFI1.chm">FP-NET-6LPWIFI1.chm</a>)</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Drivers</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>BSP
+          X-NUCLEO-IDW01M1 V2.1.0 (<a
+          href="Drivers/BSP/X-NUCLEO-IDW01M1/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>BSP
+          X-NUCLEO-IDS01Ax V1.0.0 (<a
+          href="Drivers/BSP/X-NUCLEO-IDS01Ax/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+	</ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Middlewares</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO SPWF01SA Library v2.1.0 (<a
+          href="Middlewares/ST/STM32_SPWF01SA/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Contiki OS v3.x - version updated to commit c05665a16b875f7c140e8110b913c32c7d430078 from <a href="https://github.com/contiki-os/contiki">https://github.com/contiki-os/contiki</a> repository</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	</ul>
+	<p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+	<p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Development Toolchains and Compilers<u9:p></u9:p></span></u></b></p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>IAR
+         Embedded Workbench for ARM (EWARM) toolchain v7.80 + ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Keil
+         Microcontroller Development Kit (MDK-ARM) toolchain v5.18<span
+         class=apple-converted-space><span style='font-family:"Verdana","sans-serif"'>
+         </span></span>+&nbsp;ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>
+         System Workbench for STM32 (SW4STM32) toolchain v1.11<span class=apple-converted-space><span
+         style='font-family:"Verdana","sans-serif"'> </span></span>+&nbsp;ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+    <p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Supported Devices and EVAL boards<u9:p></u9:p></span></u></b></p>
+    <ul style='margin-top:0in' type=square>	
+	<li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32F401RE devices</span><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO-IDW01M1
+         Wi-Fi Expansion Board</span><u9:p></u9:p><o:p></o:p></li>
+  <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO-IDS01Ax
+         SubGHz Expansion Board</span><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+    <p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Known Limitations</span></u></b></p>
+    <ul style='margin-top:0in' type=square>	 
+	<li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+		 4.5pt;mso-list:l1 level1 lfo8;tab-stops:list .5in'><span
+		 style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>There is a Hardware limitation on the maximum number of connected clients, in fact SPWF01SA module is limited to a maximum of 8 open sockets</span><u9:p></u9:p><o:p></o:p></li>
+	 <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+		 4.5pt;mso-list:l1 level1 lfo8;tab-stops:list .5in'><span
+		 style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Only UDP transport protocol is supported at the moment</span><u9:p></u9:p><o:p></o:p></li>
+	 </ul>
+    </ul>
+
+
+<h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 200px;">
+<span style="font-size: 10pt; font-family: Arial; color: white;">V1.0.1 / 13-Dec-2016</span></h3>
+<u9:p></u9:p>
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:"Verdana","sans-serif";
+    color:black'>Main Changes</span></u></b><span style='font-size:10.0pt;
+    font-family:"Verdana","sans-serif"'> </span><o:p></o:p></p>
+    <u9:p></u9:p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>Bug fix for X-NUCLEO-IDS01A5 binary images in Utilities folder</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+
+	
+<h3 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; margin-right: 500pt; width: 200px;">
+<span style="font-size: 10pt; font-family: Arial; color: white;">V1.0.0 / 07-Oct-2016</span></h3>
+<u9:p></u9:p>
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:"Verdana","sans-serif";
+    color:black'>Main Changes</span></u></b><span style='font-size:10.0pt;
+    font-family:"Verdana","sans-serif"'> </span><o:p></o:p></p>
+    <u9:p></u9:p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l0 level1 lfo3;tab-stops:list .5in'><span
+         style='float:none;word-spacing:0px'><b><span style='font-size:10.0pt;
+         font-family:"Verdana","sans-serif"'>First official release of the 
+		 FP-NET-6LPWIFI1 package</span></span></b><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:"Verdana","sans-serif";
+    color:black'><br>
+    Contents</span></u></b><span style='font-size:10.0pt'> </span></p>
+<u9:p></u9:p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l6 level1 lfo4;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32Cube HAL and Middlewares drivers</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>	  
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32CubeF4 v1.11.0 </span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-CUBE-WIFI1 v2.0.0 </span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-CUBE-SUBG1 v1.1.1</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Documentation</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l7 level2 lfo5;tab-stops:list 1.0in'><span
+          class=apple-converted-space><span style='font-size:10.0pt;font-family:
+          "Verdana","sans-serif"'>Doxygen documentation </span></span><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>V1.0.0<span
+          class=apple-converted-space><span style='font-family:"Verdana","sans-serif"'>&nbsp;</span></span>(<a
+          href="Documentation/FP-NET-6LPWIFI1.chm">FP-NET-6LPWIFI1.chm</a>)</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Drivers</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>BSP
+          X-NUCLEO-IDW01M1 V2.0.0 (<a
+          href="Drivers/BSP/X-NUCLEO-IDW01M1/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>BSP
+          X-NUCLEO-IDS01Ax V1.0.0 (<a
+          href="Drivers/BSP/X-NUCLEO-IDS01Ax/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+	</ul>
+    </ul>
+	<ul style='margin-top:0in;text-align:start;word-spacing:0px' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l7 level1 lfo5;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Middlewares</span><u9:p></u9:p><o:p></o:p></li>
+     <ul style='margin-top:0in' type=square>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO SPWF01SA Library v2.0.0 (<a
+          href="Middlewares/ST/STM32_SPWF01SA/Release_Notes.html">release notes</a>)</span><u9:p></u9:p><o:p></o:p></li>
+      <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+          4.5pt;mso-list:l6 level2 lfo4;tab-stops:list 1.0in'><span
+          style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Contiki OS v3.x - version updated to commit c05665a16b875f7c140e8110b913c32c7d430078 from <a href="https://github.com/contiki-os/contiki">https://github.com/contiki-os/contiki</a> repository</span><u9:p></u9:p><o:p></o:p></li>
+     </ul>
+    </ul>
+	</ul>
+	<p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+	<p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Development Toolchains and Compilers<u9:p></u9:p></span></u></b></p>
+    <ul style='margin-top:0in' type=square>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>IAR
+         Embedded Workbench for ARM (EWARM) toolchain v7.70 + ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Keil
+         Microcontroller Development Kit (MDK-ARM) toolchain v5.18<span
+         class=apple-converted-space><span style='font-family:"Verdana","sans-serif"'>
+         </span></span>+&nbsp;ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l4 level1 lfo6;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>
+         System Workbench for STM32 (SW4STM32) toolchain v1.10<span class=apple-converted-space><span
+         style='font-family:"Verdana","sans-serif"'> </span></span>+&nbsp;ST-LINK</span><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+    <p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Supported Devices and EVAL boards<u9:p></u9:p></span></u></b></p>
+    <ul style='margin-top:0in' type=square>	
+	<li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>STM32F401RE devices</span><o:p></o:p></li>
+     <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO-IDW01M1
+         Wi-Fi Expansion Board</span><u9:p></u9:p><o:p></o:p></li>
+  <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+         4.5pt;mso-list:l2 level1 lfo7;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>X-NUCLEO-IDS01Ax
+         SubGHz Expansion Board</span><u9:p></u9:p><o:p></o:p></li>
+    </ul>
+    <p class=MsoNormal><span style='font-size:10.0pt'><u9:p>&nbsp;</u9:p></span></p>
+    <p class=MsoNormal style='margin-top:4.5pt;margin-right:0in;margin-bottom:
+    4.5pt;margin-left:17.25pt'><b><u><span style='font-size:10.0pt;font-family:
+    "Verdana","sans-serif";color:black'>Known Limitations</span></u></b></p>
+    <ul style='margin-top:0in' type=square>	 
+	<li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+		 4.5pt;mso-list:l1 level1 lfo8;tab-stops:list .5in'><span
+		 style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>There is a Hardware limitation on the maximum number of connected clients, in fact SPWF01SA module is limited to a maximum of 8 open sockets</span><u9:p></u9:p><o:p></o:p></li>
+	 <li class=MsoNormal style='color:black;margin-top:4.5pt;margin-bottom:
+		 4.5pt;mso-list:l1 level1 lfo8;tab-stops:list .5in'><span
+		 style='font-size:10.0pt;font-family:"Verdana","sans-serif"'>Only UDP transport protocol is supported at the moment</span><u9:p></u9:p><o:p></o:p></li>
+	 </ul>
+    </ul>
+
+
+<span style="font-size: 10pt; font-family: Verdana;"></span>
+
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"><span style="font-size: 12pt; color: white;"><a name="License"></a>License<o:p></o:p></span></h2>
+<p class="MsoNormal"><font size="-1"><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">Licensed under Software License Agreement SLA0055, (the "License"). You may
+not use this&nbsp;</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">package</span><span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">
+except in compliance with the License. You may obtain a copy of the
+License at:<br>
+<br>
+</span></font></p>
+<div style="text-align: center;"><font size="-1">
+<span style="font-size: 10pt; font-family: &quot;Verdana&quot;,&quot;sans-serif&quot;; color: black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a target="_blank" href="http://www.st.com/content/st_com/en/search.html#q=SLA0055-t=keywords-page=1">SLA0055: SOFTWARE LICENSE AGREEMENT</a>
+</span>
+<br>
+<br>
+</font></div>
+
+<h2 style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; text-align:center;">
+<span style="font-size: 10pt; color: white;">
+For complete documentation on STM32 ODE visit <a href="http://www.st.com/stm32ode" target="_blank"; style="font-size: 10pt; color: white;">www.st.com/stm32ode</a><o:p></o:p></span>
+</h2>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="MsoNormal"><span style="font-size: 10pt;"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body></html>
